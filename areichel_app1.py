@@ -17,13 +17,13 @@ st.write('Utilize our advanced Machine Learning Application to predict fetal hea
 
 # Reading the pickle file that we created before  
 with open('decision_tree_fetal.pickle', 'rb') as dt_pickle:
-        clf = pickle.load(dt_pickle)
+    clf = pickle.load(dt_pickle)
 with open('random_forest_fetal.pickle', 'rb') as rf_pickle:
-        clf1 = pickle.load(rf_pickle)
+    clf1 = pickle.load(rf_pickle)
 with open('Adaboost_fetal.pickle', 'rb') as ab_pickle:
-        clf2 = pickle.load(ab_pickle)
+    clf2 = pickle.load(ab_pickle)
 with open('softvoting_fetal.pickle', 'rb') as sv_pickle:
-        clf3 = pickle.load(sv_pickle)
+    clf3 = pickle.load(sv_pickle)
 
 df = pd.read_csv('fetal_health.csv').drop(columns='fetal_health')
 
