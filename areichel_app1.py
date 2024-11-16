@@ -41,7 +41,7 @@ model_selection = st.sidebar.radio("Choose Model for  Prediction", options=['Ran
 st.sidebar.info(f"You selected: {model_selection}")
 
 if uploaded_file is not None:
-    st.success('✅ CSV file uploaded successfully')
+    st.success('✅ *CSV file uploaded successfully*')
     if model_selection == 'Decision Tree':
          model = clf
     elif model_selection == 'Random Forest':
@@ -130,6 +130,6 @@ if uploaded_file is not None:
             st.image('feature_imp_sv.svg')
         st.caption("Features used in this prediction are ranked by relative importance.")
 else:
-    st.info('Please upload data to proceed')
+    st.info('*Please upload data to proceed*')
 
 
